@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3795E9822785905200184203 /* XGPermanentThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 3795E9812785905200184203 /* XGPermanentThread.m */; };
 		3795E9852786BCC100184203 /* UIButton+count.m in Sources */ = {isa = PBXBuildFile; fileRef = 3795E9842786BCC100184203 /* UIButton+count.m */; };
+		3795E9882786E09000184203 /* XGCodeVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3795E9872786E09000184203 /* XGCodeVerifyViewController.m */; };
 		B8740D8F1E79569D0019369C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8740D8E1E79569D0019369C /* main.m */; };
 		B8740D921E79569D0019369C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8740D911E79569D0019369C /* AppDelegate.m */; };
 		B8740D951E79569D0019369C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8740D941E79569D0019369C /* ViewController.m */; };
@@ -45,6 +46,8 @@
 		3795E9812785905200184203 /* XGPermanentThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGPermanentThread.m; sourceTree = "<group>"; };
 		3795E9832786BCC100184203 /* UIButton+count.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+count.h"; sourceTree = "<group>"; };
 		3795E9842786BCC100184203 /* UIButton+count.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+count.m"; sourceTree = "<group>"; };
+		3795E9862786E09000184203 /* XGCodeVerifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCodeVerifyViewController.h; sourceTree = "<group>"; };
+		3795E9872786E09000184203 /* XGCodeVerifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCodeVerifyViewController.m; sourceTree = "<group>"; };
 		B8740D8A1E79569D0019369C /* SmoothNavDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothNavDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8740D8E1E79569D0019369C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8740D901E79569D0019369C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				B8740E121E7FEEBA0019369C /* UIViewController+Cloudox.m */,
 				B8740DC91E7E70C70019369C /* UINavigationController+Cloudox.h */,
 				B8740DCA1E7E70C70019369C /* UINavigationController+Cloudox.m */,
+				3795E9862786E09000184203 /* XGCodeVerifyViewController.h */,
+				3795E9872786E09000184203 /* XGCodeVerifyViewController.m */,
 				B8740D961E79569D0019369C /* Main.storyboard */,
 				B8740D991E79569D0019369C /* Assets.xcassets */,
 				B8740D9B1E79569D0019369C /* LaunchScreen.storyboard */,
@@ -308,6 +313,7 @@
 				3795E9852786BCC100184203 /* UIButton+count.m in Sources */,
 				B8740D951E79569D0019369C /* ViewController.m in Sources */,
 				3795E9822785905200184203 /* XGPermanentThread.m in Sources */,
+				3795E9882786E09000184203 /* XGCodeVerifyViewController.m in Sources */,
 				B8740DC21E7957840019369C /* NextViewController.m in Sources */,
 				B8740D921E79569D0019369C /* AppDelegate.m in Sources */,
 				B8740D8F1E79569D0019369C /* main.m in Sources */,
