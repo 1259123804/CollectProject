@@ -10,6 +10,7 @@
 #define XGPerThread [XGPermanentThread sharedPermanentThread]
 NS_ASSUME_NONNULL_BEGIN
 
+///常驻线程，线程保活
 @interface XGPermanentThread : NSObject
 
 + (instancetype)sharedPermanentThread;

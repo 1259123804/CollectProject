@@ -13,6 +13,7 @@
 		3795E98E2786E5D800184203 /* sortedNameEN.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3795E98B2786E5D800184203 /* sortedNameEN.plist */; };
 		3795E98F2786E5D800184203 /* sortedNameCH.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3795E98C2786E5D800184203 /* sortedNameCH.plist */; };
 		3795E9902786E5D800184203 /* XWCountryCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3795E98D2786E5D800184203 /* XWCountryCodeController.m */; };
+		3795E9952786E7BD00184203 /* WSLWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3795E9932786E7BD00184203 /* WSLWaterFlowLayout.m */; };
 		B8740D8F1E79569D0019369C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8740D8E1E79569D0019369C /* main.m */; };
 		B8740D921E79569D0019369C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8740D911E79569D0019369C /* AppDelegate.m */; };
 		B8740D951E79569D0019369C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8740D941E79569D0019369C /* ViewController.m */; };
@@ -55,6 +56,8 @@
 		3795E98B2786E5D800184203 /* sortedNameEN.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = sortedNameEN.plist; sourceTree = "<group>"; };
 		3795E98C2786E5D800184203 /* sortedNameCH.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = sortedNameCH.plist; sourceTree = "<group>"; };
 		3795E98D2786E5D800184203 /* XWCountryCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCountryCodeController.m; sourceTree = "<group>"; };
+		3795E9932786E7BD00184203 /* WSLWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLWaterFlowLayout.m; sourceTree = "<group>"; };
+		3795E9942786E7BD00184203 /* WSLWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLWaterFlowLayout.h; sourceTree = "<group>"; };
 		B8740D8A1E79569D0019369C /* SmoothNavDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothNavDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8740D8E1E79569D0019369C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8740D901E79569D0019369C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +119,15 @@
 			path = XWCountryCode;
 			sourceTree = "<group>";
 		};
+		3795E9922786E7BD00184203 /* WSLWaterFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3795E9932786E7BD00184203 /* WSLWaterFlowLayout.m */,
+				3795E9942786E7BD00184203 /* WSLWaterFlowLayout.h */,
+			);
+			path = WSLWaterFlowLayout;
+			sourceTree = "<group>";
+		};
 		B8740D811E79569D0019369C = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +152,7 @@
 		B8740D8C1E79569D0019369C /* SmoothNavDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3795E9922786E7BD00184203 /* WSLWaterFlowLayout */,
 				3795E9892786E5D800184203 /* XWCountryCode */,
 				B8740D901E79569D0019369C /* AppDelegate.h */,
 				B8740D911E79569D0019369C /* AppDelegate.m */,
@@ -330,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3795E9952786E7BD00184203 /* WSLWaterFlowLayout.m in Sources */,
 				B8740DCB1E7E70C70019369C /* UINavigationController+Cloudox.m in Sources */,
 				3795E9852786BCC100184203 /* UIButton+count.m in Sources */,
 				3795E9902786E5D800184203 /* XWCountryCodeController.m in Sources */,
