@@ -1,0 +1,1 @@
+../../../LFMediaEditingController/LFMediaEditingController/LFMediaEditingController/class/common/view/other/sticker/LFMovingView.h

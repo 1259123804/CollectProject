@@ -1,0 +1,1 @@
+../../../LFMediaEditingController/LFMediaEditingController/LFMediaEditingController/class/vendors/JRPickColorView/JRPickColorView.h

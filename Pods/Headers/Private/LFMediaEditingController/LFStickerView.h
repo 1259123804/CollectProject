@@ -1,0 +1,1 @@
+../../../LFMediaEditingController/LFMediaEditingController/LFMediaEditingController/class/common/view/subView/LFStickerView.h

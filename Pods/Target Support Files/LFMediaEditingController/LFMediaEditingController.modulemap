@@ -1,0 +1,6 @@
+module LFMediaEditingController {
+  umbrella header "LFMediaEditingController-umbrella.h"
+
+  export *
+  module * { export * }
+}

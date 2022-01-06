@@ -1,0 +1,6 @@
+module LFFilterSuite {
+  umbrella header "LFFilterSuite-umbrella.h"
+
+  export *
+  module * { export * }
+}

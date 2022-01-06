@@ -1,0 +1,248 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - BRPickerView (2.7.6):
+    - BRPickerView/AddressPickerView (= 2.7.6)
+    - BRPickerView/Base (= 2.7.6)
+    - BRPickerView/DatePickerView (= 2.7.6)
+    - BRPickerView/StringPickerView (= 2.7.6)
+  - BRPickerView/AddressPickerView (2.7.6):
+    - BRPickerView/Base
+  - BRPickerView/Base (2.7.6)
+  - BRPickerView/DatePickerView (2.7.6):
+    - BRPickerView/Base
+  - BRPickerView/StringPickerView (2.7.6):
+    - BRPickerView/Base
+  - CYLTabBarController (1.29.2):
+    - CYLTabBarController/Core (= 1.29.2)
+  - CYLTabBarController/Core (1.29.2)
+  - DZNEmptyDataSet (1.8.1)
+  - FLAnimatedImage (1.0.16)
+  - GKCycleScrollView (1.1.0)
+  - IAPHelper (1.1)
+  - IQKeyboardManager (6.5.9)
+  - JCore (2.7.1)
+  - JPush (3.6.2):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - JXCategoryView (1.5.9)
+  - KNPhotoBrowser (2.5.4):
+    - SDWebImage
+  - KVOController (1.2.0)
+  - LFAssetExportSession (1.0.3)
+  - LFFilterSuite (1.0.3):
+    - LFAssetExportSession
+  - LFMediaEditingController (1.4.8.2):
+    - LFMediaEditingController/Core (= 1.4.8.2)
+  - LFMediaEditingController/Core (1.4.8.2):
+    - LFMediaEditingController/LFPhotoEditingController
+    - LFMediaEditingController/LFVideoEditingController
+  - LFMediaEditingController/JRFilterBar (1.4.8.2)
+  - LFMediaEditingController/JRPickColorView (1.4.8.2)
+  - LFMediaEditingController/LFColorMatrix (1.4.8.2)
+  - LFMediaEditingController/LFDownloadManager (1.4.8.2)
+  - LFMediaEditingController/LFDrawView (1.4.8.2)
+  - LFMediaEditingController/LFEasyNoticeBar (1.4.8.2)
+  - LFMediaEditingController/LFImageCoder (1.4.8.2)
+  - LFMediaEditingController/LFPhotoEditingController (1.4.8.2):
+    - LFFilterSuite
+    - LFMediaEditingController/JRFilterBar
+    - LFMediaEditingController/JRPickColorView
+    - LFMediaEditingController/LFColorMatrix
+    - LFMediaEditingController/LFDownloadManager
+    - LFMediaEditingController/LFDrawView
+    - LFMediaEditingController/LFEasyNoticeBar
+    - LFMediaEditingController/LFImageCoder
+    - LFMediaEditingController/LFPresentationCategory
+    - LFMediaEditingController/LFTipsGuideView
+    - LFMediaEditingController/SPDropMenu
+  - LFMediaEditingController/LFPresentationCategory (1.4.8.2)
+  - LFMediaEditingController/LFTipsGuideView (1.4.8.2)
+  - LFMediaEditingController/LFVideoEditingController (1.4.8.2):
+    - LFFilterSuite
+    - LFMediaEditingController/JRFilterBar
+    - LFMediaEditingController/JRPickColorView
+    - LFMediaEditingController/LFColorMatrix
+    - LFMediaEditingController/LFDownloadManager
+    - LFMediaEditingController/LFDrawView
+    - LFMediaEditingController/LFEasyNoticeBar
+    - LFMediaEditingController/LFImageCoder
+    - LFMediaEditingController/LFPresentationCategory
+    - LFMediaEditingController/LFTipsGuideView
+    - LFMediaEditingController/SPDropMenu
+  - LFMediaEditingController/SPDropMenu (1.4.8.2)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.2)
+  - MMLayout (0.2.0)
+  - mob_sharesdk (4.4.2):
+    - mob_sharesdk/ShareSDK (= 4.4.2)
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDK (4.4.2):
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Facebook (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKUI (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_smssdk (3.3.2):
+    - MOBFoundation
+  - MOBFoundation (3.2.27)
+  - MyLayout (1.9.8)
+  - Protobuf (3.19.1)
+  - ReactiveObjC (3.1.1)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.9.0):
+    - SDWebImage/Core (= 5.9.0)
+  - SDWebImage/Core (5.9.0)
+  - SSZipArchive (2.4.2)
+  - SVGAPlayer (2.5.7):
+    - SVGAPlayer/Core (= 2.5.7)
+    - SVGAPlayer/ProtoFiles (= 2.5.7)
+  - SVGAPlayer/Core (2.5.7):
+    - SSZipArchive (>= 1.8.1)
+    - SVGAPlayer/ProtoFiles
+  - SVGAPlayer/ProtoFiles (2.5.7):
+    - Protobuf (~> 3.4)
+  - SVProgressHUD (2.2.5)
+  - Toast (4.0.0)
+  - TXIMSDK_iOS (5.1.60)
+  - TXIMSDK_TUIKit_iOS (5.1.60):
+    - MMLayout (= 0.2.0)
+    - ReactiveObjC (= 3.1.1)
+    - SDWebImage (= 5.9.0)
+    - Toast (= 4.0.0)
+    - TXIMSDK_iOS (= 5.1.60)
+    - TXLiteAVSDK_TRTC (= 8.5.10022)
+  - TXLiteAVSDK_TRTC (8.5.10022)
+  - TZImagePickerController (3.6.7)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - BRPickerView
+  - CYLTabBarController
+  - DZNEmptyDataSet
+  - FLAnimatedImage
+  - GKCycleScrollView
+  - IAPHelper
+  - IQKeyboardManager
+  - JPush (~> 3.6.2)
+  - JXCategoryView
+  - KNPhotoBrowser
+  - KVOController
+  - LFMediaEditingController
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - mob_sharesdk
+  - mob_sharesdk/ShareSDKPlatforms/Facebook
+  - mob_sharesdk/ShareSDKUI
+  - mob_smssdk
+  - MyLayout
+  - SDCycleScrollView
+  - SDWebImage
+  - SVGAPlayer
+  - SVProgressHUD
+  - TXIMSDK_TUIKit_iOS (~> 5.1.56)
+  - TZImagePickerController
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - BRPickerView
+    - CYLTabBarController
+    - DZNEmptyDataSet
+    - FLAnimatedImage
+    - GKCycleScrollView
+    - IAPHelper
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - JXCategoryView
+    - KNPhotoBrowser
+    - KVOController
+    - LFAssetExportSession
+    - LFFilterSuite
+    - LFMediaEditingController
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MMLayout
+    - mob_sharesdk
+    - mob_smssdk
+    - MOBFoundation
+    - MyLayout
+    - Protobuf
+    - ReactiveObjC
+    - SDCycleScrollView
+    - SDWebImage
+    - SSZipArchive
+    - SVGAPlayer
+    - SVProgressHUD
+    - Toast
+    - TXIMSDK_iOS
+    - TXIMSDK_TUIKit_iOS
+    - TXLiteAVSDK_TRTC
+    - TZImagePickerController
+    - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  BRPickerView: 2a1620caf218e37a3aca9626732719a419928b15
+  CYLTabBarController: db44b5901a28693a8a4279e4721b3aafdd36c178
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
+  GKCycleScrollView: 045920647a28f613e8972553a7cdfb34eb369810
+  IAPHelper: fd74f53b0ac142eed085777b88b86a11746a2dd4
+  IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
+  JCore: 9d5bda3a172c65bbe14f2806ab0f6246f8a06065
+  JPush: 5272c18a040c5dd695053816f7c7ce33422a21b4
+  JXCategoryView: 2ef9ecfd3735158d009ce02d1f29811aa822da65
+  KNPhotoBrowser: a6da54e9bdca3cc1f4ab36b0ff2be706ae5be868
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  LFAssetExportSession: c1e60bb85962bba9ff78e4a1d7a29919ec2e5540
+  LFFilterSuite: 522f6a3d94ee66528b7db5b34a9b84312b882de4
+  LFMediaEditingController: c931a4d4dfb6c8aa635ebcea9fbbce7d17d9356d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  MMLayout: 3fb59d58eeb8656c64e61d550fb0088e10666c11
+  mob_sharesdk: a60006891a079486ff3269ed326adfa05a967c01
+  mob_smssdk: 7dd38a9087980f9dfd74b9b25d87db36b38496c7
+  MOBFoundation: efdc3ce6b843fbc10ae8c1c6122a02b0d845b39b
+  MyLayout: 6ca47dbf27648aa011496094cfe1162217e3c912
+  Protobuf: 3724efa50cb2846d7ccebc8691c574e85fd74471
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
+  SSZipArchive: e7b4f3d9e780c2acc1764cd88fbf2de28f26e5b2
+  SVGAPlayer: 318b85a78b61292d6ae9dfcd651f3f0d1cdadd86
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TXIMSDK_iOS: 015557374d46a549ec63f298e76d1aaf38611284
+  TXIMSDK_TUIKit_iOS: 3b4fd0f969efc67dfe645cb3b030cb790d9de2c3
+  TXLiteAVSDK_TRTC: 52c1085c546ca7871950a815edf733196af645c1
+  TZImagePickerController: 679ae9fa11e189a9a81291ae96f0a4463be8edc1
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 99b9ccd6d9ba2646f34f7df33542d26d0c4b9e5a
+
+COCOAPODS: 1.11.2

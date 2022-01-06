@@ -1,0 +1,6 @@
+framework module NSMKit {
+  umbrella header "NSMKit.h"
+
+  export *
+  module * { export * }
+}

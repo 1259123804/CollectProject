@@ -1,0 +1,1 @@
+../../../LFMediaEditingController/LFMediaEditingController/LFMediaEditingController/class/LFPhotoEditingController/utils/GIFUtils/LFMEGIFImageSerialization.h

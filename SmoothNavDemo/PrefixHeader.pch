@@ -1,0 +1,48 @@
+//
+//  PrefixHeader.pch
+//  SmoothNavDemo
+//
+//  Created by xiaoguang on 2022/1/6.
+//  Copyright © 2022 Cloudox. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+// MARK:第三方SDK
+#import <MOBFoundation/MobSDK+Privacy.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <SDCycleScrollView/SDCycleScrollView.h>
+#import <IAPHelper/IAPHelper.h>
+#import <IAPHelper/IAPShare.h>
+#import <Masonry/Masonry.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <JXCategoryView/JXCategoryView.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKUI/ShareSDK+SSUI.h>
+#import <SMS_SDK/SMSSDK.h>
+#import <KNPhotoBrowser/KNPhotoBrowser.h>
+#import <SDWebImage/SDWebImage.h>
+//#import <MQTTClient/MQTTClient.h>
+// MARK:极光推送
+#import "JPUSHService.h"
+// iOS10 注册 APNs 所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+// MARK:NSMKit
+#import <AFNetworking/AFNetworking.h>
+#import <MyLayout/MyLayout.h>
+#import <YYKit/YYKit.h>
+#import <NSMKit/NSMKit.h>
+// MARK:实时音视频
+// MARK:配置
+#import "OSTools.h"
+#pragma mark - 宏
+#define kBlackColor             HexColor(@"#1D1D1D")
+#define kGrayColor              HexColor(@"#E8E8E8")
+
+#endif /* PrefixHeader_pch */

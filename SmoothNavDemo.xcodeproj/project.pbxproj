@@ -14,6 +14,10 @@
 		3795E98F2786E5D800184203 /* sortedNameCH.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3795E98C2786E5D800184203 /* sortedNameCH.plist */; };
 		3795E9902786E5D800184203 /* XWCountryCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3795E98D2786E5D800184203 /* XWCountryCodeController.m */; };
 		3795E9952786E7BD00184203 /* WSLWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3795E9932786E7BD00184203 /* WSLWaterFlowLayout.m */; };
+		3795E9982786E86A00184203 /* OSTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3795E9962786E86A00184203 /* OSTools.m */; };
+		3795E9A22786ECA900184203 /* NSMKit in Resources */ = {isa = PBXBuildFile; fileRef = 3795E9A12786ECA900184203 /* NSMKit */; };
+		3795E9A42786ECE000184203 /* NSMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3795E9A32786ECE000184203 /* NSMKit.framework */; };
+		A041B7B2352624933EC9BFFA /* libPods-SmoothNavDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA494F9286BFE11304112006 /* libPods-SmoothNavDemo.a */; };
 		B8740D8F1E79569D0019369C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8740D8E1E79569D0019369C /* main.m */; };
 		B8740D921E79569D0019369C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8740D911E79569D0019369C /* AppDelegate.m */; };
 		B8740D951E79569D0019369C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8740D941E79569D0019369C /* ViewController.m */; };
@@ -58,6 +62,13 @@
 		3795E98D2786E5D800184203 /* XWCountryCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCountryCodeController.m; sourceTree = "<group>"; };
 		3795E9932786E7BD00184203 /* WSLWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLWaterFlowLayout.m; sourceTree = "<group>"; };
 		3795E9942786E7BD00184203 /* WSLWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLWaterFlowLayout.h; sourceTree = "<group>"; };
+		3795E9962786E86A00184203 /* OSTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSTools.m; sourceTree = "<group>"; };
+		3795E9972786E86A00184203 /* OSTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSTools.h; sourceTree = "<group>"; };
+		3795E9A12786ECA900184203 /* NSMKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NSMKit; sourceTree = "<group>"; };
+		3795E9A32786ECE000184203 /* NSMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NSMKit.framework; path = SmoothNavDemo/NSMKit/NSMKit.framework; sourceTree = "<group>"; };
+		3795E9A52786EE2700184203 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = SmoothNavDemo/PrefixHeader.pch; sourceTree = "<group>"; };
+		89FAFF243DAA2B5FAEE5C4A8 /* Pods-SmoothNavDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothNavDemo.debug.xcconfig"; path = "Target Support Files/Pods-SmoothNavDemo/Pods-SmoothNavDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AA494F9286BFE11304112006 /* libPods-SmoothNavDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmoothNavDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8740D8A1E79569D0019369C /* SmoothNavDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothNavDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8740D8E1E79569D0019369C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8740D901E79569D0019369C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +92,7 @@
 		B8740E111E7FEEBA0019369C /* UIViewController+Cloudox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Cloudox.h"; sourceTree = "<group>"; };
 		B8740E121E7FEEBA0019369C /* UIViewController+Cloudox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Cloudox.m"; sourceTree = "<group>"; };
 		B8740E531E829A950019369C /* 2017-03-22 19_28_33.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "2017-03-22 19_28_33.gif"; sourceTree = "<group>"; };
+		F80A5D45B68662B5ECE1D3DD /* Pods-SmoothNavDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothNavDemo.release.xcconfig"; path = "Target Support Files/Pods-SmoothNavDemo/Pods-SmoothNavDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3795E9A42786ECE000184203 /* NSMKit.framework in Frameworks */,
+				A041B7B2352624933EC9BFFA /* libPods-SmoothNavDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +122,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2965275EC5D6E69BF260676C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3795E9A32786ECE000184203 /* NSMKit.framework */,
+				AA494F9286BFE11304112006 /* libPods-SmoothNavDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3795E9892786E5D800184203 /* XWCountryCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,14 +151,26 @@
 			path = WSLWaterFlowLayout;
 			sourceTree = "<group>";
 		};
+		66B59565EA928D1152E286B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89FAFF243DAA2B5FAEE5C4A8 /* Pods-SmoothNavDemo.debug.xcconfig */,
+				F80A5D45B68662B5ECE1D3DD /* Pods-SmoothNavDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B8740D811E79569D0019369C = {
 			isa = PBXGroup;
 			children = (
+				3795E9A52786EE2700184203 /* PrefixHeader.pch */,
 				B8740D8C1E79569D0019369C /* SmoothNavDemo */,
 				B8740DA61E79569D0019369C /* SmoothNavDemoTests */,
 				B8740DB11E79569D0019369C /* SmoothNavDemoUITests */,
 				B8740D8B1E79569D0019369C /* Products */,
 				B8740E531E829A950019369C /* 2017-03-22 19_28_33.gif */,
+				66B59565EA928D1152E286B6 /* Pods */,
+				2965275EC5D6E69BF260676C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,10 +187,13 @@
 		B8740D8C1E79569D0019369C /* SmoothNavDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3795E9A12786ECA900184203 /* NSMKit */,
 				3795E9922786E7BD00184203 /* WSLWaterFlowLayout */,
 				3795E9892786E5D800184203 /* XWCountryCode */,
 				B8740D901E79569D0019369C /* AppDelegate.h */,
 				B8740D911E79569D0019369C /* AppDelegate.m */,
+				3795E9972786E86A00184203 /* OSTools.h */,
+				3795E9962786E86A00184203 /* OSTools.m */,
 				B8740D931E79569D0019369C /* ViewController.h */,
 				B8740D941E79569D0019369C /* ViewController.m */,
 				B8740DC01E7957840019369C /* NextViewController.h */,
@@ -212,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8740DB71E79569D0019369C /* Build configuration list for PBXNativeTarget "SmoothNavDemo" */;
 			buildPhases = (
+				53F5FC597A5C82C4F9DDEF0C /* [CP] Check Pods Manifest.lock */,
 				B8740D861E79569D0019369C /* Sources */,
 				B8740D871E79569D0019369C /* Frameworks */,
 				B8740D881E79569D0019369C /* Resources */,
+				8C201A60E3E137233D81352A /* [CP] Embed Pods Frameworks */,
+				B5FF02FFF4D8690C9C5F05A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -316,6 +357,7 @@
 				3795E98E2786E5D800184203 /* sortedNameEN.plist in Resources */,
 				B8740D9D1E79569D0019369C /* LaunchScreen.storyboard in Resources */,
 				B8740D9A1E79569D0019369C /* Assets.xcassets in Resources */,
+				3795E9A22786ECA900184203 /* NSMKit in Resources */,
 				B8740E541E829A950019369C /* 2017-03-22 19_28_33.gif in Resources */,
 				B8740D981E79569D0019369C /* Main.storyboard in Resources */,
 				3795E98F2786E5D800184203 /* sortedNameCH.plist in Resources */,
@@ -338,6 +380,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		53F5FC597A5C82C4F9DDEF0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmoothNavDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C201A60E3E137233D81352A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmoothNavDemo/Pods-SmoothNavDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5FF02FFF4D8690C9C5F05A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmoothNavDemo/Pods-SmoothNavDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B8740D861E79569D0019369C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -346,6 +443,7 @@
 				3795E9952786E7BD00184203 /* WSLWaterFlowLayout.m in Sources */,
 				B8740DCB1E7E70C70019369C /* UINavigationController+Cloudox.m in Sources */,
 				3795E9852786BCC100184203 /* UIButton+count.m in Sources */,
+				3795E9982786E86A00184203 /* OSTools.m in Sources */,
 				3795E9902786E5D800184203 /* XWCountryCodeController.m in Sources */,
 				B8740D951E79569D0019369C /* ViewController.m in Sources */,
 				3795E9822785905200184203 /* XGPermanentThread.m in Sources */,
@@ -498,9 +596,16 @@
 		};
 		B8740DB81E79569D0019369C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FAFF243DAA2B5FAEE5C4A8 /* Pods-SmoothNavDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6398WC8XA6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmoothNavDemo/NSMKit",
+				);
+				GCC_PREFIX_HEADER = SmoothNavDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = SmoothNavDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Cloudox.SmoothNavDemo;
@@ -510,9 +615,16 @@
 		};
 		B8740DB91E79569D0019369C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F80A5D45B68662B5ECE1D3DD /* Pods-SmoothNavDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6398WC8XA6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmoothNavDemo/NSMKit",
+				);
+				GCC_PREFIX_HEADER = SmoothNavDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = SmoothNavDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Cloudox.SmoothNavDemo;
