@@ -47,7 +47,7 @@ target 'SmoothNavDemo' do
   # 极光推送
   pod 'JPush', '~> 3.6.2'
   
-  # 腾讯IM带UI
+  # 腾讯IM带
   pod 'TXIMSDK_TUIKit_iOS', '~> 5.1.56'
   # 腾讯直播带UI
   #pod 'TXIMSDK_TUIKit_live_iOS', '~> 5.1.56'

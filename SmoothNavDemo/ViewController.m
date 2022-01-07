@@ -13,6 +13,7 @@
 #import "XGPermanentThread.h"
 #import <objc/runtime.h>
 #import "UIButton+count.h"
+#import "XGPerson.h"
 static char *blockKey = "blockKey";
 
 @interface ViewController ()
@@ -34,6 +35,10 @@ static char *blockKey = "blockKey";
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    XGPerson *p = [[XGPerson alloc] init];
+    [p singSong:@"123"];
+    [XGPerson haveMeal:@"456"];
     [self addObserver:self forKeyPath:@"testArr" options:NSKeyValueObservingOptionNew context:nil];
     
     self.testArr = [NSMutableArray arrayWithObject:@"123"];

@@ -17,6 +17,7 @@
 		3795E9982786E86A00184203 /* OSTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3795E9962786E86A00184203 /* OSTools.m */; };
 		3795E9A22786ECA900184203 /* NSMKit in Resources */ = {isa = PBXBuildFile; fileRef = 3795E9A12786ECA900184203 /* NSMKit */; };
 		3795E9A42786ECE000184203 /* NSMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3795E9A32786ECE000184203 /* NSMKit.framework */; };
+		3795E9A82787D45C00184203 /* XGPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3795E9A72787D45B00184203 /* XGPerson.m */; };
 		A041B7B2352624933EC9BFFA /* libPods-SmoothNavDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA494F9286BFE11304112006 /* libPods-SmoothNavDemo.a */; };
 		B8740D8F1E79569D0019369C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8740D8E1E79569D0019369C /* main.m */; };
 		B8740D921E79569D0019369C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8740D911E79569D0019369C /* AppDelegate.m */; };
@@ -67,6 +68,8 @@
 		3795E9A12786ECA900184203 /* NSMKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NSMKit; sourceTree = "<group>"; };
 		3795E9A32786ECE000184203 /* NSMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NSMKit.framework; path = SmoothNavDemo/NSMKit/NSMKit.framework; sourceTree = "<group>"; };
 		3795E9A52786EE2700184203 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = SmoothNavDemo/PrefixHeader.pch; sourceTree = "<group>"; };
+		3795E9A62787D45B00184203 /* XGPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGPerson.h; sourceTree = "<group>"; };
+		3795E9A72787D45B00184203 /* XGPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGPerson.m; sourceTree = "<group>"; };
 		89FAFF243DAA2B5FAEE5C4A8 /* Pods-SmoothNavDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothNavDemo.debug.xcconfig"; path = "Target Support Files/Pods-SmoothNavDemo/Pods-SmoothNavDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AA494F9286BFE11304112006 /* libPods-SmoothNavDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmoothNavDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8740D8A1E79569D0019369C /* SmoothNavDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothNavDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +216,8 @@
 				3795E9812785905200184203 /* XGPermanentThread.m */,
 				3795E9832786BCC100184203 /* UIButton+count.h */,
 				3795E9842786BCC100184203 /* UIButton+count.m */,
+				3795E9A62787D45B00184203 /* XGPerson.h */,
+				3795E9A72787D45B00184203 /* XGPerson.m */,
 			);
 			path = SmoothNavDemo;
 			sourceTree = "<group>";
@@ -254,8 +259,8 @@
 				B8740D861E79569D0019369C /* Sources */,
 				B8740D871E79569D0019369C /* Frameworks */,
 				B8740D881E79569D0019369C /* Resources */,
-				8C201A60E3E137233D81352A /* [CP] Embed Pods Frameworks */,
 				B5FF02FFF4D8690C9C5F05A2 /* [CP] Copy Pods Resources */,
+				32D4FC08501CC8F6BBDEE370 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,6 +386,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		32D4FC08501CC8F6BBDEE370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmoothNavDemo/Pods-SmoothNavDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		53F5FC597A5C82C4F9DDEF0C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,21 +421,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C201A60E3E137233D81352A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmoothNavDemo/Pods-SmoothNavDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B5FF02FFF4D8690C9C5F05A2 /* [CP] Copy Pods Resources */ = {
@@ -441,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3795E9952786E7BD00184203 /* WSLWaterFlowLayout.m in Sources */,
+				3795E9A82787D45C00184203 /* XGPerson.m in Sources */,
 				B8740DCB1E7E70C70019369C /* UINavigationController+Cloudox.m in Sources */,
 				3795E9852786BCC100184203 /* UIButton+count.m in Sources */,
 				3795E9982786E86A00184203 /* OSTools.m in Sources */,
