@@ -39,6 +39,40 @@ static char *blockKey = "blockKey";
     XGPerson *p = [[XGPerson alloc] init];
     [p singSong:@"123"];
     [XGPerson haveMeal:@"456"];
+    NSLog(@"----%@", p.name);
+    
+    [p setValue:@"1111111" forKey:@"name"];
+    
+    /*runtime应用：
+     1.动态方法交换，包括交换两个方法的实现，和拦截并替换系统方法
+     2.类目添加新属性
+     3.获取类详细的属性，包括属性列表，成员变量列表，方法列表，协议列表
+     4.解决同一方法高频率调用的效率问题
+     5.动态方法解析和消息转发，包括动态添加方法，解决方法无响应崩溃的问题
+     6.动态操作属性，包括修改私有属性，改进iOS归档与解档，实现字典与模型的转换
+     */
+    
+    //实现方法动态交换Method Swizzling原理是通过RunTime获取到方法实现的地址，进而动态的交换两个方法的功能。
+    
+    //类目catory为已知的类拓展功能，虽然继承也能为类增加方法，而且比类目更加具有增加属性的优势，但继承是一个重量级的操作，添加不必要的继承关系无疑增加了代码的复杂度。类目不支持直接添加属性，如果在分类的声明中写入property属性，只能为其生成set和get方法声明，但不能生成成员变量。直接调用这些属性会崩溃
+    
+    //给分类添加属性需要借助runtime的关联对象Associated Objects特性，能帮我们正在运行阶段将任意的属性关联到一个对象上
+    
+    //oc调用方法，编译后就走objc_msgSend的逻辑，最终是为了找到该方法对应的函数指针（IMP），再调用函数指针，找到IMP后保存起来，下次执行可以直接调用IMP。不需要走消息查找逻辑了，效率就可以提高了。
+    
+    unsigned int count = 0;
+    Ivar *varList = class_copyIvarList(p.class, &count);
+    for (unsigned int i = 0; i < count; i++) {
+        
+        NSString *varName = [NSString stringWithUTF8String: ivar_getName(varList[i])];
+        NSLog(@"++++%@", varName);
+        if ([varName isEqualToString:@"_name"]) {
+            NSLog(@"ivar ---> %@", object_getIvar(p, varList[i]));
+            object_setIvar(p, varList[i], @"ys");
+            NSLog(@"ivar ---> %@", object_getIvar(p, varList[i]));
+        }
+    }
+    
     [self addObserver:self forKeyPath:@"testArr" options:NSKeyValueObservingOptionNew context:nil];
     
     self.testArr = [NSMutableArray arrayWithObject:@"123"];
@@ -64,7 +98,6 @@ static char *blockKey = "blockKey";
     self.totalTask = 15;
     self.tmpThread = [[XGPermanentThread alloc] init];
     
-    unsigned int count;
     objc_property_t *propertyList = class_copyPropertyList([self class], &count);
     for (unsigned int i = 0; i < count; i++) {
         
@@ -84,7 +117,8 @@ static char *blockKey = "blockKey";
         
         Ivar aIvar = ivarList[i];
         const char *varName = ivar_getName(aIvar);
-        NSLog(@"ivar ---> %@", [NSString stringWithUTF8String:varName]);
+        NSString *varName1 = [NSString stringWithUTF8String:varName];
+        NSLog(@"ivar ---> %@", varName1);
     }
     
     //动态添加方法
