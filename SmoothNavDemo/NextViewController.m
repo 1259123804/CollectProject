@@ -11,8 +11,13 @@
 #import "UIViewController+Cloudox.h"
 #import "UINavigationController+Cloudox.h"
 #import <objc/runtime.h>
+#import <AVFoundation/AVFoundation.h>
+#import "ListViewController.h"
 static char *blockKey = "blockKey";
-@interface NextViewController () <UINavigationControllerDelegate>
+@interface NextViewController () <UINavigationControllerDelegate>{
+    
+    SystemSoundID soundID;
+}
 
 @property (nonatomic, strong) UIColor *barBGColor;
 @property (nonatomic, strong) UIImage *barShadowImg;
@@ -84,13 +89,37 @@ static char *blockKey = "blockKey";
 
 // 返回上一页
 - (void)toBackView {
+
+    
+    AudioServicesRemoveSystemSoundCompletion(soundID);
+    AudioServicesDisposeSystemSoundID(kSystemSoundID_Vibrate);
+    return;
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 // 进入新界面
 - (void)toNextView {
+    
+    ListViewController *vc = [ListViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+    return;
+    
+    NSString *file = [[NSBundle mainBundle] pathForResource:@"receive" ofType:@"caf"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef _Nonnull)([NSURL fileURLWithPath:file]), &soundID);
+    AudioServicesAddSystemSoundCompletion(kSystemSoundID_Vibrate, NULL, NULL, soundCompletion, NULL);
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    AudioServicesPlaySystemSound(soundID);
+    return;
     ViewController *nextVC = [[ViewController alloc] init];
     [self.navigationController pushViewController:nextVC animated:YES];
+    
+}
+
+void soundCompletion(SystemSoundID sound, void *clientData){
+    
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    AudioServicesPlaySystemSound(sound);
 }
 
 #pragma mark - UINavigationControllerDelegate
